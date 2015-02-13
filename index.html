@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="manejador.js"></script>
+	<title>Tu clima :)</title>
+</head>
+<body>
+
+	<header class="main-header">
+		<h1>Segus By Clima</h1>
+		<h2>Para que sepas scuando sacar la sombrilla</h2>
+	</header>
+
+	<div class="loader">Gelocalizando, por favor epere ...</div>
+
+	<form class="search" action="">
+		<input class="search" type="text"></input>
+		<input class="btn" type="button" value="Clikeame"></input>
+	</form>
+	
+	<main class="cards-group">
+		<template id="template--city">
+			<div class="cards">
+				<header class="card__header">
+					<h3 data-city class="card__title"></h3>
+					<h4 data-time class="card__time"></h4>
+				</header>
+				<div class="card_info">
+					<img data-icon src="" alt="" class="card__image" />
+					<span data-temp="max" class="card__maxt"></span>
+					<span data-temp="min" class="card__mint"></span>
+					<span data-temp="current" class="card__temp"></span>
+
+				</div>
+				
+			</div>
+		</template>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+</body>
+</html>
